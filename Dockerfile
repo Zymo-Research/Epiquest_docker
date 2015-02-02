@@ -26,7 +26,7 @@ libpng-dev \
 openjdk-7-jdk \
 r-base \
 samtools \
-gnuplot \
+gnuplot
 
 
 # pip install
