@@ -27,6 +27,8 @@ openjdk-7-jdk \
 r-base \
 samtools \
 gnuplot
+libxml2-dev \
+libxslt1-dev
 
 
 # pip install
