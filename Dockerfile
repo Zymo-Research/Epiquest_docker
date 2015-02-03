@@ -44,7 +44,6 @@ pysam \
 rpy2 \
 fisher \
 numexpr \
-tables \
 bottleneck \
 sqlalchemy \
 lxml \
@@ -54,6 +53,10 @@ matplotlib-venn \
 MACS2 \
 ceas \
 cutadapt
+
+# pytbles needs to be installed after numexpr.
+RUN pip2 install \
+tables
 
 # Install Qiime
 pip2 install https://github.com/biocore/qiime/archive/1.9.0-rc2.tar.gz
