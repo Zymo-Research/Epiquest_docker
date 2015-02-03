@@ -28,8 +28,8 @@ r-base \
 samtools \
 gnuplot
 libxml2-dev \
-libxslt1-dev
-
+libxslt-dev \
+python-dev
 
 # pip install
 RUN pip2 install \
