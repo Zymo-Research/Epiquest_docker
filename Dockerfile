@@ -33,6 +33,7 @@ python2.7-dev
 
 # pip install
 RUN pip2 install \
+cython \
 MySQL-python \
 biopython \
 xlwt \
