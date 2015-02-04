@@ -49,7 +49,8 @@ fisher \
 numexpr \
 bottleneck \
 sqlalchemy \
-lxml \
+# Has trouble to install lxml
+# lxml \
 html5lib \
 beautifulsoup4 \
 matplotlib-venn \
