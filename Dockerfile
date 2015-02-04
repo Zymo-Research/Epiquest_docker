@@ -66,3 +66,7 @@ tables
 pip2 install https://github.com/biocore/qiime/archive/1.9.0-rc2.tar.gz
 # Test Qiime
 print_qiime_config.py -t
+
+# Django env path.
+ENV PYTHONPATH=/var/www/EpiQuest_py
+ENV DJANGO_SETTINGS_MODULE=EpiQuest_py.settings
