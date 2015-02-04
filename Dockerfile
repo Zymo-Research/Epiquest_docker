@@ -29,7 +29,7 @@ samtools \
 gnuplot
 libxml2-dev \
 libxslt-dev \
-python-dev
+python2.7-dev
 
 # pip install
 RUN pip2 install \
@@ -53,7 +53,7 @@ html5lib \
 beautifulsoup4 \
 matplotlib-venn \
 MACS2 \
-ceas \
+# ceas \
 cutadapt
 
 # pytbles needs to be installed after numexpr.
