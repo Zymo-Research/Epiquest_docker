@@ -77,7 +77,7 @@ RUN ln -s /usr/share/bowtie-1.1.1 /usr/share/bowtie
 ADD https://github.com/BenLangmead/bowtie2/archive/v2.2.4.tar.gz /usr/share/bowtie2.tar.gz
 RUN tar zxvf /usr/share/bowtie2.tar.gz
 RUN rm -rf /usr/share/bowtie2.tar.gz
-RUN ln -s /usr/share/bowtie2-2.2.4 /usr/share/bowtie
+RUN ln -s /usr/share/bowtie2-2.2.4 /usr/share/bowtie2
 # Add Bismark 0.13.1
 ADD http://www.bioinformatics.bbsrc.ac.uk/projects/bismark/bismark_v0.13.1.tar.gz /usr/share/
 RUN tar zxvf /usr/share/bismark_v0.13.1.tar.gz
