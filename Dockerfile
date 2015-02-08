@@ -96,7 +96,7 @@ RUN ln -s /usr/share/tophat-2.0.13.Linux_x86_64 /usr/share/tophat
 # Add Cufflinks
 ADD http://cole-trapnell-lab.github.io/cufflinks/assets/downloads/cufflinks-2.2.1.Linux_x86_64.tar.gz /usr/share/
 RUN tar zxvf /usr/share/cufflinks-2.2.1.Linux_x86_64.tar.gz
-RUN rmr -rf /usr/share/cufflinks-2.2.1.Linux_x86_64.tar.gz
+RUN rm -rf /usr/share/cufflinks-2.2.1.Linux_x86_64.tar.gz
 RUN ln -s /usr/share/cufflinks-2.2.1.Linux_x86_64 /usr/share/cufflinks
 # Add CummeRbund
 
