@@ -90,13 +90,13 @@ RUN rm -rf /usr/share/trim_galore_v0.3.7.zip
 RUN ln -s /usr/share/trim_galore_zip /usr/share/trim_galore
 # Add TopHat 2.0.13
 ADD http://ccb.jhu.edu/software/tophat/downloads/tophat-2.0.13.Linux_x86_64.tar.gz /usr/share/
-RUN tar zxvf tophat-2.0.13.Linux_x86_64.tar.gz
-RUN rm -rf tophat-2.0.13.Linux_x86_64.tar.gz
+RUN tar zxvf /usr/share/tophat-2.0.13.Linux_x86_64.tar.gz
+RUN rm -rf /usr/share/tophat-2.0.13.Linux_x86_64.tar.gz
 RUN ln -s /usr/share/tophat-2.0.13.Linux_x86_64 /usr/share/tophat
 # Add Cufflinks
 ADD http://cole-trapnell-lab.github.io/cufflinks/assets/downloads/cufflinks-2.2.1.Linux_x86_64.tar.gz /usr/share/
-RUN tar zxvf cufflinks-2.2.1.Linux_x86_64.tar.gz
-RUN rmr -rf cufflinks-2.2.1.Linux_x86_64.tar.gz
+RUN tar zxvf /usr/share/cufflinks-2.2.1.Linux_x86_64.tar.gz
+RUN rmr -rf /usr/share/cufflinks-2.2.1.Linux_x86_64.tar.gz
 RUN ln -s /usr/share/cufflinks-2.2.1.Linux_x86_64 /usr/share/cufflinks
 # Add CummeRbund
 
