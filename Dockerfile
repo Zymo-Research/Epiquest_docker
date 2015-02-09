@@ -108,7 +108,7 @@ ADD http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/bedToBigBed /usr/share
 ADD http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/bedGraphToBigWig /usr/share/genomicTools/
 ADD http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/bigWigToBedGraph /usr/share/genomicTools/
 ADD http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/wigToBigWig /usr/share/genomicTools/
-ADD http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/BigWigToWig /usr/share/genomicTools/
+ADD http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/bigWigToWig /usr/share/genomicTools/
 
 # Django env path.
 ENV PYTHONPATH=/var/www/EpiQuest_py
