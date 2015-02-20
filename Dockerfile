@@ -119,7 +119,7 @@ ADD http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/bigWigToWig /usr/share
 # Django env path.
 ENV PYTHONPATH=/var/www/EpiQuest_py
 ENV DJANGO_SETTINGS_MODULE=EpiQuest_py.settings
-ENV PATH=${PATH}:/usr/share/bowtie:/usr/share/bowtie2:/usr/share/genomicTools:/usr/share/bismark:/usr/share/trim_galore:/usr/share/tophat:/usr/share/cufflink:/usr/share/samtoolss
+ENV PATH=${PATH}:/usr/share/bowtie:/usr/share/bowtie2:/usr/share/genomicTools:/usr/share/bismark:/usr/share/trim_galore:/usr/share/tophat:/usr/share/cufflink:/usr/share/samtools
 
 VOLUME /mnt
 WORKDIR /mnt
