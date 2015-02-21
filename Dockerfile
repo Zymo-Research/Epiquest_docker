@@ -10,7 +10,8 @@ gnuplot
 libxml2-dev \
 libxslt-dev \
 python2.7-dev \
-unzip
+unzip \
+tabix
 
 # pip install
 RUN pip2 install \
