@@ -6,7 +6,7 @@ RUN apt-get update && apt-get dist-upgrade -y -q \
 openjdk-7-jdk \
 r-base \
 samtools \
-gnuplot
+gnuplot \
 libxml2-dev \
 libxslt-dev \
 python2.7-dev \
