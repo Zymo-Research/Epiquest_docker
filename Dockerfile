@@ -92,6 +92,7 @@ ADD http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/bedGraphToBigWig /usr/
 ADD http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/bigWigToBedGraph /usr/share/genomicTools/
 ADD http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/wigToBigWig /usr/share/genomicTools/
 ADD http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/bigWigToWig /usr/share/genomicTools/
+RUN chmod 755 /usr/share/genomicTools/*
 
 # Django env path.
 ENV PYTHONPATH=/var/www/EpiQuest_py

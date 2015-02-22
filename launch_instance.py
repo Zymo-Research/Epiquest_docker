@@ -22,9 +22,11 @@ reservation = conn.request_spot_instances(
     key_name=key_name,
     security_groups=['EpiQuest slave'],
     user_data=user_data,
-    placement=region_zone
+    placement=region_zone,
+    instance_profile_name='EpiQuest_pipeline',
 )
-instance = reservation[0].instances[0]
+import pdb; pdb.set_trace()
+instance = reservation[0].instance_id
 print "instance id:", instance.id
 
 ## wait for instance running
