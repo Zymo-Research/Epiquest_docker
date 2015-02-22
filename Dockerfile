@@ -48,8 +48,9 @@ pip2 install https://github.com/biocore/qiime/archive/1.9.0-rc2.tar.gz
 print_qiime_config.py -t
 
 # Add Bowtie 1.1.1
-ADD https://github.com/BenLangmead/bowtie/archive/v1.1.1.tar.gz /tmp/
-RUN tar zxvf v1.1.1.tar.gz
+RUN curl -L "http://downloads.sourceforge.net/project/bowtie-bio/bowtie/1.1.1/bowtie-1.1.1-linux-x86_64.zip?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fbowtie-bio%2Ffiles%2Fbowtie%2F1.1.1%2F&ts=1424587446&use_mirror=iweb" > bowtie-1.1.1-linux-x86_64.zip
+# RUN tar zxvf v1.1.1.tar.gz
+RUN unzip bowtie-1.1.1-linux-x86_64.zip
 RUN mv bowtie-1.1.1 /usr/share/
 RUN ln -s /usr/share/bowtie-1.1.1 /usr/share/bowtie
 # Add Bowtie 2.2.4
