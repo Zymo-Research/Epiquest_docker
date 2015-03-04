@@ -26,8 +26,13 @@ reservation = conn.request_spot_instances(
     instance_profile_name='EpiQuest_pipeline',
 )
 import pdb; pdb.set_trace()
-instance = reservation[0].instance_id
-print "instance id:", instance.id
+instance_id = reservation[0].instance_id
+
+# Wait for spot instance price is accepted.
+# while reservation[0].status.code!='':
+#     pass
+
+print "instance id:", instance_id
 
 ## wait for instance running
 time.sleep(3)
