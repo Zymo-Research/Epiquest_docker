@@ -15,7 +15,7 @@ with open(os.path.join(BASE_DIR, 'use_sotrage_for_docker_cloud_config.txt')) as 
 
 conn = boto.ec2.connect_to_region(region_zone[:-1])
 
-reservation = conn.request_spot_instances(
+requests = conn.request_spot_instances(
     instance_type=instance_type,
     price=price,
     image_id='ami-24b5ad61',
@@ -25,16 +25,18 @@ reservation = conn.request_spot_instances(
     placement=region_zone,
     instance_profile_name='EpiQuest_pipeline',
 )
-import pdb; pdb.set_trace()
-instance_id = reservation[0].instance_id
+request_id = requests[0].id
 
 # Wait for spot instance price is accepted.
-# while reservation[0].status.code!='':
-#     pass
-
+while True:
+    time.sleep(10)
+    instance_id = conn.get_all_spot_instance_requests(request_ids=[request_id])[0].instance_id
+    if instance_id:
+        break
 print "instance id:", instance_id
 
 ## wait for instance running
+instance = conn.get_all_instances([instance_id])[0].instances[0]
 time.sleep(3)
 while instance.update()!="running":
     time.sleep(1)
