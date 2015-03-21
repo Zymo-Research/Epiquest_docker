@@ -42,8 +42,8 @@ RUN pip install -U \
 
 # pytbles needs to be installed after numexpr.
 RUN pip2 install \
-    tables \
-    matplotlib
+    tables 
+    # matplotlib
 
 # Install packages.
 ADD install_packages.sh
