@@ -4,7 +4,7 @@ MAINTAINER Hunter Chung <hchung@zymoresearch.com>
 RUN sed -i.dist 's,universe$,universe multiverse,' /etc/apt/sources.list
 RUN apt-get update && \
 apt-get install -y \
-    openjdk-7-jdk \
+    # openjdk-7-jdk \
     r-base \
     samtools \
     # gnuplot \
