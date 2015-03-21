@@ -18,9 +18,10 @@ apt-get clean autoclean && \
 apt-get autoremove -y
 
 # pip install
-RUN pip install \
+RUN pip install -U \
     # cython \
     filechunkio \
+    distribute \
     rpy2 \
     fisher \
     numexpr \
