@@ -3,7 +3,7 @@ MAINTAINER Hunter Chung <hchung@zymoresearch.com>
 
 RUN sed -i.dist 's,universe$,universe multiverse,' /etc/apt/sources.list
 RUN apt-get update && \
-apt-get install -y
+apt-get install -y \
     openjdk-7-jdk \
     r-base \
     samtools \
@@ -37,7 +37,7 @@ RUN pip install \
     matplotlib \
     # ceas \
     # isntall Qiime
-    https://github.com/biocore/qiime/archive/1.9.0-rc2.tar.gz \ 
+    https://github.com/biocore/qiime/archive/1.9.0-rc2.tar.gz \
     cutadapt
 
 # pytbles needs to be installed after numexpr.
