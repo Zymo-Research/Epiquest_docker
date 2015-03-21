@@ -23,6 +23,8 @@ requests = conn.request_spot_instances(
     security_groups=['EpiQuest slave'],
     user_data=user_data,
     placement=region_zone,
+    # placement_group='docker-test',
+    # subnet_id='vpc-f10db994',
     instance_profile_name='EpiQuest_pipeline',
 )
 request_id = requests[0].id
