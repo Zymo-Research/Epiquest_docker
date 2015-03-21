@@ -30,7 +30,6 @@ RUN pip install -U \
     # lxml \
     html5lib \
     beautifulsoup4 \
-    matplotlib-venn \
     MACS2 \
     scipy \
     pandas \
@@ -43,7 +42,8 @@ RUN pip2 install \
     ipython \
     # isntall Qiime
     https://github.com/biocore/qiime/archive/1.9.0-rc2.tar.gz \
-    # matplotlib
+    # matplotlib \
+    matplotlib-venn
 
 # Install packages.
 ADD install_packages.sh
