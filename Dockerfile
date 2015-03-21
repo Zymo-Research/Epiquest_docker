@@ -37,7 +37,7 @@ RUN pip install \
     matplotlib \
     # ceas \
     # isntall Qiime
-    https://github.com/biocore/qiime/archive/1.9.0-rc2.tar.gz
+    https://github.com/biocore/qiime/archive/1.9.0-rc2.tar.gz \ 
     cutadapt
 
 # pytbles needs to be installed after numexpr.
