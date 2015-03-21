@@ -22,7 +22,7 @@ RUN pip install -U \
     # cython \
     filechunkio \
     distribute \
-    rpy2 \
+    setuptools \
     fisher \
     numexpr \
     bottleneck \
@@ -38,6 +38,7 @@ RUN pip install -U \
 
 # pytbles needs to be installed after numexpr.
 RUN pip2 install \
+    rpy2 \
     tables
     ipython \
     # isntall Qiime
