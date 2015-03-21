@@ -35,14 +35,14 @@ RUN pip install -U \
     scipy \
     pandas \
     # ceas \
-    # isntall Qiime
-    https://github.com/biocore/qiime/archive/1.9.0-rc2.tar.gz \
     cutadapt
 
 # pytbles needs to be installed after numexpr.
 RUN pip2 install \
     tables
     ipython \
+    # isntall Qiime
+    https://github.com/biocore/qiime/archive/1.9.0-rc2.tar.gz \
     # matplotlib
 
 # Install packages.
