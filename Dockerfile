@@ -7,6 +7,7 @@ apt-get install -y \
     build-essential \
     gfortran \
     liblapack-dev \
+    libhdf5-7 \
     # openjdk-7-jdk \
     r-base \
     samtools \
