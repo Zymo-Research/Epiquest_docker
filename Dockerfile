@@ -44,7 +44,7 @@ RUN pip install -U \
 # pytbles needs to be installed after numexpr.
 RUN pip install \
     rpy2 \
-    tables
+    # tables \
     ipython \
     # isntall Qiime
     https://github.com/biocore/qiime/archive/1.9.0-rc2.tar.gz \
