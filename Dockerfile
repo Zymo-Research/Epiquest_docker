@@ -7,10 +7,12 @@ apt-get install -y \
     build-essential \
     gfortran \
     liblapack-dev \
-    libhdf5-7 \
+    libhdf5-dev \
     # openjdk-7-jdk \
     r-base \
     samtools \
+    libfreetype6-dev \
+    libpng-dev \
     # gnuplot \
     # libxml2-dev \
     # libxslt-dev \
@@ -22,12 +24,12 @@ apt-get clean autoclean && \
 apt-get autoremove -y
 
 # # pip install
-ADD install_python_packages.sh install_python_packages.sh
-RUN bash install_python_packages.sh
+ADD install_python_packages.sh /tmp/install_python_packages.sh
+RUN bash /tmp/install_python_packages.sh
 
 # Install packages.
-ADD install_bioinfo_packages.sh install_bioinfo_packages.sh
-RUN bash install_bioinfo_packages.sh
+ADD install_bioinfo_packages.sh /tmp/install_bioinfo_packages.sh
+RUN bash /tmp/install_bioinfo_packages.sh
 
 # Django env path.
 ENV PYTHONPATH=/var/www/EpiQuest_py

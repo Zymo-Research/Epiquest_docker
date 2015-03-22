@@ -23,8 +23,7 @@ pip install \
     rpy2 \
     tables \
     ipython \
-    # isntall Qiime
-    https://github.com/biocore/qiime/archive/1.9.0-rc2.tar.gz \
     matplotlib \
     seaborn \
-    matplotlib-venn
+    matplotlib-venn \
+    qiime
