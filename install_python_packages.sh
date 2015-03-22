@@ -20,7 +20,7 @@ pip install -U \
 
 # pytbles needs to be installed after numexpr.
 pip install \
-    rpy2 \
+    # rpy2 \
     tables \
     ipython \
     matplotlib \
