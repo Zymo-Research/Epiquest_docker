@@ -20,7 +20,7 @@ apt-get clean autoclean && \
 apt-get autoremove -y
 
 # # pip install
-pip install -U \
+RUN pip install -U \
     # cython \
     filechunkio \
     distribute \
