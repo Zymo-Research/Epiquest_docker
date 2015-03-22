@@ -4,6 +4,8 @@ MAINTAINER Hunter Chung <hchung@zymoresearch.com>
 RUN sed -i.dist 's,universe$,universe multiverse,' /etc/apt/sources.list
 RUN apt-get update && \
 apt-get install -y \
+    build-essential \
+    liblapack-dev \
     # openjdk-7-jdk \
     r-base \
     samtools \
@@ -18,23 +20,24 @@ apt-get clean autoclean && \
 apt-get autoremove -y
 
 # # pip install
-# RUN pip install -U \
-#     # cython \
-#     filechunkio \
-#     distribute \
-#     setuptools \
-#     fisher \
-#     numexpr \
-#     bottleneck \
-#     # Has trouble to install lxml
-#     # lxml \
-#     html5lib \
-#     beautifulsoup4 \
-#     MACS2 \
-#     scipy \
-#     pandas \
-#     # ceas \
-#     cutadapt
+pip install -U \
+    # cython \
+    filechunkio \
+    distribute \
+    setuptools \
+    fisher \
+    numexpr \
+    bottleneck \
+    # Has trouble to install lxml
+    # lxml \
+    html5lib \
+    beautifulsoup4 \
+    MACS2 \
+    scipy \
+    pandas \
+    scikit-learn \
+    # ceas \
+    cutadapt
 #
 # # pytbles needs to be installed after numexpr.
 # RUN pip2 install \
@@ -44,6 +47,7 @@ apt-get autoremove -y
 #     # isntall Qiime
 #     https://github.com/biocore/qiime/archive/1.9.0-rc2.tar.gz \
 #     # matplotlib \
+#     seaborn \
 #     matplotlib-venn
 #
 # # Install packages.
