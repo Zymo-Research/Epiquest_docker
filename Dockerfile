@@ -40,7 +40,7 @@ pip install -U \
     cutadapt
 
 # pytbles needs to be installed after numexpr.
-RUN pip2 install \
+RUN pip install \
     rpy2 \
     tables
     ipython \
