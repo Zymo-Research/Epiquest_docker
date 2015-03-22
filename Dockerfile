@@ -23,7 +23,7 @@ apt-get autoremove -y
 RUN pip install -U \
     filechunkio \
     # distribute \
-    setuptools \
+    # setuptools \
     fisher \
     numexpr \
     bottleneck \
