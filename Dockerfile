@@ -22,6 +22,7 @@ apt-get autoremove -y
 
 # # pip install
 RUN pip install -U \
+    cython
     filechunkio \
     # distribute \
     # setuptools \
