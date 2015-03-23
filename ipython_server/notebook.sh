@@ -12,7 +12,7 @@ fi
 
 # Create the hash to pass to the IPython notebook, but don't export it so it doesn't appear
 # as an environment variable within IPython kernels themselves
-HASH=$(python3 -c "from IPython.lib import passwd; print(passwd('${PASSWORD}'))")
+HASH=$(python -c "from IPython.lib import passwd; print(passwd('${PASSWORD}'))")
 unset PASSWORD
 
 CERTFILE_OPTION="--certfile=$PEM_FILE"
