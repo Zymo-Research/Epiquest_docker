@@ -12,7 +12,7 @@ EXPOSE 8888
 # You can mount your own SSL certs as necessary here
 ENV PEM_FILE /key.pem
 # $PASSWORD will get `unset` within notebook.sh, turned into an IPython style hash
-ENV PASSWORD
+ENV PASSWORD please change this
 ENV USE_HTTP 0
 
 ADD notebook.sh /
