@@ -21,4 +21,4 @@ if [ $USE_HTTP -ne 0 ]; then
   CERTFILE_OPTION=""
 fi
 
-ipython2 notebook --no-browser --port 8888 --ip=* $CERTFILE_OPTION --NotebookApp.password="$HASH" --matplotlib=inline
+ipython notebook --no-browser --port 8888 --ip=* $CERTFILE_OPTION --NotebookApp.password="$HASH" --matplotlib=inline
