@@ -5,7 +5,7 @@ RUN pip install -U \
     pyzmq \
     jinja2 \
     tornado \
-    jsonschema \
+    jsonschema
 
 EXPOSE 8888
 
