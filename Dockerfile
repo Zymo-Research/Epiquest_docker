@@ -32,7 +32,7 @@ ADD install_bioinfo_packages.sh /tmp/install_bioinfo_packages.sh
 RUN bash /tmp/install_bioinfo_packages.sh
 
 # Django env path.
-ENV PYTHONPATH=/var/www/EpiQuest_py
+ENV PYTHONPATH=/usr/share/EpiQuest_py
 ENV DJANGO_SETTINGS_MODULE=EpiQuest_py.settings
 ENV PATH=${PATH}:/usr/share/bowtie:/usr/share/bowtie2:/usr/share/genomicTools:/usr/share/bismark:/usr/share/trim_galore:/usr/share/tophat:/usr/share/cufflink:/usr/share/samtools
 
