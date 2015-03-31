@@ -14,6 +14,7 @@ pip install -U \
     pandas \
     scikit-learn \
     openpyxl \
+    xlrd \
     pysam \
     cutadapt
     # Has trouble to install lxml
