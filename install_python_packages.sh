@@ -2,6 +2,7 @@ pip install -U distribute
 
 pip install -U \
     cython \
+    pillow \
     filechunkio \
     setuptools \
     fisher \
