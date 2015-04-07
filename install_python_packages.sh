@@ -3,6 +3,7 @@ pip install -U distribute
 pip install -U \
     cython \
     pillow \
+    biopython \ 
     filechunkio \
     setuptools \
     fisher \
