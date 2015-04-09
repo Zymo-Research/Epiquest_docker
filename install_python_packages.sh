@@ -3,7 +3,7 @@ pip install -U distribute
 pip install -U \
     cython \
     pillow \
-    biopython \ 
+    biopython \
     filechunkio \
     setuptools \
     fisher \
@@ -32,5 +32,5 @@ pip install \
     matplotlib \
     seaborn \
     matplotlib-venn \
-    qiime
+    qiime==1.8
     # rpy2 \
