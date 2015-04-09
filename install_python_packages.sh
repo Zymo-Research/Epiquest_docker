@@ -18,6 +18,7 @@ pip install -U \
     openpyxl \
     xlrd \
     xlwt \
+    xlsxwriter \
     pysam \
     cutadapt
     # Has trouble to install lxml
