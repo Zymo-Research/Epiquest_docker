@@ -5,6 +5,7 @@ RUN sed -i.dist 's,universe$,universe multiverse,' /etc/apt/sources.list
 RUN apt-get update && \
 apt-get install -y \
     build-essential \
+    libkrb5-3 \
     gfortran \
     liblapack-dev \
     libhdf5-dev \
