@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-curl -L "http://downloads.sourceforge.net/project/bowtie-bio/bowtie/1.1.1/bowtie-1.1.1-linux-x86_64.zip?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fbowtie-bio%2Ffiles%2Fbowtie%2F1.1.1%2F&ts=1424587446&use_mirror=iweb" > bowtie-1.1.1-linux-x86_64.zip && \
+curl -L "http://downloads.sourceforge.net/project/bowtie-bio/bowtie/1.1.1/bowtie-1.1.1-linux-x86_64.zip?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fbowtie-bio%2Ffiles%2Fbowtie%2F1.1.1%2F&ts=1424587446&use_mirror=iweb" > bowtie-1.1.1-linux-x86_64.zip
 unzip bowtie-1.1.1-linux-x86_64.zip
 rm bowtie-1.1.1-linux-x86_64.zip
 mv bowtie-1.1.1 /usr/share/
