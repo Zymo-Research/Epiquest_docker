@@ -4,6 +4,7 @@ MAINTAINER Hunter Chung <hchung@zymoresearch.com>
 RUN sed -i.dist 's,universe$,universe multiverse,' /etc/apt/sources.list
 RUN apt-get update && \
 apt-get install -y \
+    curl \
     build-essential \
     libkrb5-3 \
     gfortran \
