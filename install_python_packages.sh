@@ -20,6 +20,7 @@ pip install -U \
     xlwt \
     xlsxwriter \
     pysam \
+    awscli \
     cutadapt
     # Has trouble to install lxml
     # lxml \
