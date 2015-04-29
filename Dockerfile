@@ -15,6 +15,8 @@ apt-get install -y \
     samtools \
     libfreetype6-dev \
     libpng-dev \
+    libreadline6 \
+    libreadline6-dev \
     # gnuplot \
     # libxml2-dev \
     # libxslt-dev \
