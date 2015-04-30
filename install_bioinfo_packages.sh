@@ -45,4 +45,5 @@ wget http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/bedGraphToBigWig -O /
 wget http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/bigWigToBedGraph -O /usr/share/genomicTools/bigWigToBedGraph
 wget http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/wigToBigWig -O /usr/share/genomicTools/wigToBigWig
 wget http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/bigWigToWig -O /usr/share/genomicTools/bigWigToWig
+wget http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/bedSort -O /usr/share/genomicTools/bedSort
 chmod 755 /usr/share/genomicTools/*
