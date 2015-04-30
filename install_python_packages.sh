@@ -22,17 +22,12 @@ pip install -U \
     pysam \
     awscli \
     cutadapt
-    # Has trouble to install lxml
-    # lxml \
-    # ceas \
 
-# pytbles needs to be installed after numexpr.
 pip install \
     tables \
     ipython \
-    rpy2 \ 
+    rpy2 \
     matplotlib \
     seaborn \
     matplotlib-venn \
     qiime
-    
