@@ -33,5 +33,5 @@ pip install \
     matplotlib \
     seaborn \
     matplotlib-venn \
-    qiime==1.8 \ 
-    rpy2 \
+    qiime \ 
+    rpy2
