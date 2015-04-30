@@ -30,8 +30,9 @@ pip install -U \
 pip install \
     tables \
     ipython \
+    rpy2 \ 
     matplotlib \
     seaborn \
     matplotlib-venn \
-    qiime \ 
-    rpy2
+    qiime
+    
