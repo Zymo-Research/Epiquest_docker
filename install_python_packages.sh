@@ -19,7 +19,7 @@ pip install -U \
     xlrd \
     xlwt \
     xlsxwriter \
-    pysam \
+    pysam==0.7.8 \
     awscli \
     cutadapt
 
