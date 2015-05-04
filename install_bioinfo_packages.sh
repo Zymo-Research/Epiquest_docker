@@ -6,11 +6,11 @@ rm bowtie-1.1.1-linux-x86_64.zip
 mv bowtie-1.1.1 /usr/share/
 ln -s /usr/share/bowtie-1.1.1 /usr/share/bowtie
 # Add Bowtie 2.2.4
-wget https://github.com/BenLangmead/bowtie2/archive/v2.2.4.tar.gz
-tar zxvf v2.2.4.tar.gz
-rm v2.2.4.tar.gz
-mv bowtie2-2.2.4 /usr/share/
-ln -s /usr/share/bowtie2-2.2.4 /usr/share/bowtie2
+wget "http://downloads.sourceforge.net/project/bowtie-bio/bowtie2/2.2.5/bowtie2-2.2.5-linux-x86_64.zip?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fbowtie-bio%2Ffiles%2Fbowtie2%2F2.2.5%2F&ts=1430783011&use_mirror=hivelocity" -O bowtie2-2.2.5-linux-x86_64.zip
+unzip bowtie2-2.2.5-linux-x86_64.zip
+rm bowtie2-2.2.5-linux-x86_64.zip
+mv bowtie2-2.2.5 /usr/share/
+ln -s /usr/share/bowtie2-2.2.5 /usr/share/bowtie2
 # Add Bismark 0.13.1
 wget http://www.bioinformatics.bbsrc.ac.uk/projects/bismark/bismark_v0.13.1.tar.gz
 tar zxvf bismark_v0.13.1.tar.gz
