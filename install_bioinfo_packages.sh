@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-
+# Add Bowtie 1.1.1
 wget "http://downloads.sourceforge.net/project/bowtie-bio/bowtie/1.1.1/bowtie-1.1.1-linux-x86_64.zip?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fbowtie-bio%2Ffiles%2Fbowtie%2F1.1.1%2F&ts=1424587446&use_mirror=iweb" -O bowtie-1.1.1-linux-x86_64.zip
 unzip bowtie-1.1.1-linux-x86_64.zip
 rm bowtie-1.1.1-linux-x86_64.zip
 mv bowtie-1.1.1 /usr/share/
 ln -s /usr/share/bowtie-1.1.1 /usr/share/bowtie
-# Add Bowtie 2.2.4
+# Add Bowtie 2.2.5
 wget "http://downloads.sourceforge.net/project/bowtie-bio/bowtie2/2.2.5/bowtie2-2.2.5-linux-x86_64.zip?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fbowtie-bio%2Ffiles%2Fbowtie2%2F2.2.5%2F&ts=1430783011&use_mirror=hivelocity" -O bowtie2-2.2.5-linux-x86_64.zip
 unzip bowtie2-2.2.5-linux-x86_64.zip
 rm bowtie2-2.2.5-linux-x86_64.zip
