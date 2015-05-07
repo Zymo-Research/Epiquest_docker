@@ -4,6 +4,7 @@ pip install -U \
     cython \
     pillow \
     biopython \
+    fastcluster \ 
     filechunkio \
     setuptools \
     fisher \
