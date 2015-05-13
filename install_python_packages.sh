@@ -22,7 +22,8 @@ pip install -U \
     xlsxwriter \
     pysam==0.7.8 \
     awscli \
-    cutadapt
+    cutadapt \
+    statsmodels
 
 pip install \
     tables \
