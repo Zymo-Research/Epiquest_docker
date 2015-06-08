@@ -11,12 +11,12 @@ unzip bowtie2-2.2.5-linux-x86_64.zip
 rm bowtie2-2.2.5-linux-x86_64.zip
 mv bowtie2-2.2.5 /usr/share/
 ln -s /usr/share/bowtie2-2.2.5 /usr/share/bowtie2
-# Add Bismark 0.13.1
-wget http://www.bioinformatics.bbsrc.ac.uk/projects/bismark/bismark_v0.13.1.tar.gz
-tar zxvf bismark_v0.13.1.tar.gz
-rm bismark_v0.13.1.tar.gz
-mv bismark_v0.13.1 /usr/share/
-ln -s /usr/share/bismark_v0.13.1 /usr/share/bismark
+# Add Bismark 0.14.3
+wget http://www.bioinformatics.bbsrc.ac.uk/projects/bismark/bismark_v0.14.3.tar.gz
+tar zxvf bismark_v0.14.3.tar.gz
+rm bismark_v0.14.3.tar.gz
+mv bismark_v0.14.3 /usr/share/
+ln -s /usr/share/bismark_v0.14.3 /usr/share/bismark
 # Add Trim Galore! 0.3.7
 wget http://www.bioinformatics.bbsrc.ac.uk/projects/trim_galore/trim_galore_v0.3.7.zip
 unzip trim_galore_v0.3.7.zip
