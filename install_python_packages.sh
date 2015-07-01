@@ -23,7 +23,8 @@ pip install -U \
     pysam==0.7.8 \
     awscli \
     cutadapt \
-    statsmodels
+    statsmodels \
+    humanize
 
 pip install \
     tables \
