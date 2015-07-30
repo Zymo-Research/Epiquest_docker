@@ -28,7 +28,7 @@ pip install -U \
 
 pip install \
     tables \
-    ipython \
+    ipython==3.2 \
     matplotlib \
     seaborn \
     matplotlib-venn \
