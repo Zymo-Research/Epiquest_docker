@@ -27,7 +27,7 @@ pip install -U \
     humanize
 
 pip install \
-    tables \
+    tables==3.1.1 \
     ipython \
     matplotlib \
     seaborn \
