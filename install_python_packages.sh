@@ -27,8 +27,8 @@ pip install -U \
     humanize
 
 pip install \
-    tables==3.1.1 \
-    ipython \
+    tables \
+    ipython==3.2 \
     matplotlib \
     seaborn \
     matplotlib-venn \
