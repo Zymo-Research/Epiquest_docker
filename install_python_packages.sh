@@ -28,6 +28,7 @@ pip install -U \
 
 pip install \
     tables \
+    funcsigs \
     ipython==3.2 \
     matplotlib \
     seaborn \
