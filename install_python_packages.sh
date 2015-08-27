@@ -24,7 +24,8 @@ pip install -U \
     awscli \
     cutadapt \
     statsmodels \
-    humanize
+    humanize \
+    boto3
 
 pip install \
     tables \
