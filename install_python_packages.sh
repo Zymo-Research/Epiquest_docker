@@ -20,7 +20,7 @@ pip install -U \
     xlrd \
     xlwt \
     xlsxwriter \
-    pysam==0.7.8 \
+    pysam \
     awscli \
     cutadapt \
     statsmodels \
