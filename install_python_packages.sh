@@ -30,7 +30,7 @@ pip install -U \
 pip install \
     tables \
     funcsigs \
-    ipython==3.2 \
+    ipython \
     matplotlib \
     seaborn \
     matplotlib-venn \

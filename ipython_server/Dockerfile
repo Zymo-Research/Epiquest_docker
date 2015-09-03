@@ -2,11 +2,9 @@ FROM hunterchung/epiquest-docker
 MAINTAINER Hunter Chung <hchung@zymoresearch.com>
 
 RUN pip install -U \
-    pyzmq \
-    jinja2 \
-    tornado \
+    jupyter \
     functools32 \
-    jsonschema
+    terminado
 
 EXPOSE 8888
 
