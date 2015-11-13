@@ -4,6 +4,7 @@ MAINTAINER Hunter Chung <hchung@zymoresearch.com>
 RUN pip install -U \
     jupyter \
     functools32 \
+    certifi==2015.04.28 \
     terminado
 
 EXPOSE 8888
