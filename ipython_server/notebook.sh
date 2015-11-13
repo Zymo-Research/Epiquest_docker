@@ -21,4 +21,4 @@ if [ $USE_HTTP -ne 0 ]; then
   CERTFILE_OPTION=""
 fi
 
-jupyter notebook --no-browser --no-mathjax --port 8888 --ip=* $CERTFILE_OPTION --NotebookApp.password="$HASH" --pylab=inline
+jupyter notebook --no-browser --no-mathjax --port 8888 --ip=* $CERTFILE_OPTION --NotebookApp.password="$HASH"

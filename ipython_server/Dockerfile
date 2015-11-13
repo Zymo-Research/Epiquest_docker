@@ -1,4 +1,4 @@
-FROM hunterchung/epiquest-docker
+FROM hunterchung/zymo-docker
 MAINTAINER Hunter Chung <hchung@zymoresearch.com>
 
 RUN pip install -U \
