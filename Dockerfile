@@ -2,6 +2,7 @@ FROM hunterchung/eg-website-docker
 MAINTAINER Hunter Chung <hchung@zymoresearch.com>
 
 RUN sed -i.dist 's,universe$,universe multiverse,' /etc/apt/sources.list
+RUN echo "deb http://http.debian.net/debian sid main" > /etc/apt/sources.list.d/debian-unstable.list
 RUN apt-get update && \
 apt-get install -y \
     curl \
@@ -18,10 +19,14 @@ apt-get install -y \
     libreadline6-dev \
     unzip \
     tabix \
-    --no-install-recommends && \
+    --no-install-recommends
+    
+RUN apt-get unstall -y r-bioc-cummerbund && \
 rm -rf /var/lib/apt/lists/* && \
 apt-get clean autoclean && \
 apt-get autoremove -y
+
+RUN R -e "source(\"http://bioconductor.org/biocLite.R\"); biocLite(\"cummeRbund\", ask=FALSE)"
 
 # Install packages.
 ADD install_python_packages.sh /tmp/install_python_packages.sh
