@@ -21,7 +21,7 @@ apt-get install -y \
     tabix \
     --no-install-recommends
     
-RUN apt-get unstall -y r-bioc-cummerbund && \
+RUN apt-get install -y r-bioc-cummerbund && \
 rm -rf /var/lib/apt/lists/* && \
 apt-get clean autoclean && \
 apt-get autoremove -y
